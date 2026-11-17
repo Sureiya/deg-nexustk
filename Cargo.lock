@@ -5,7 +5,7 @@ version = 4
 [[package]]
 name = "deg"
 version = "0.1.0"
-source = "git+https://github.com/Sureiya/deg?branch=main#aa3212384b000be7165b5f6ffdf71ae10dc8e57b"
+source = "git+https://github.com/Sureiya/deg?branch=main#78260574dac556268fd2079704aa700072f456ca"
 
 [[package]]
 name = "deg-nexustk"
