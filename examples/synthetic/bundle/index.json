@@ -1,0 +1,17 @@
+{
+ "bundles": [
+  {
+   "bundle_id": "bnd_deg_synthetic_752",
+   "counts": {
+    "blobs": 2,
+    "bytes": 301,
+    "evidence_entries": 7
+   },
+   "manifest": "bundle/manifest.json",
+   "manifest_sha256": "79c60f293c2993c67f32e39bf96643a6077df694b53af4725df356dfc7336a95",
+   "seal_sha256": "a9e4fc9ccbb3844362417b6de6913143e1b0aea95b1932066bbd39f26f6bd6cf",
+   "sealed_at": "2026-11-17T00:00:00Z"
+  }
+ ],
+ "schema": "kaze.capture-seal-index/v1"
+}

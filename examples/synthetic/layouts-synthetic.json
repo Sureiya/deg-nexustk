@@ -1,0 +1,49 @@
+{
+ "layouts": [
+  {
+   "body_layout": "len(u8) name",
+   "channel": "game",
+   "confidence": "confirmed",
+   "direction": "s2c",
+   "name": "SyntheticBoardItemUpdate",
+   "opcode": 12,
+   "status": "documented"
+  },
+  {
+   "body_layout": "u8 len(u8) name",
+   "channel": "game",
+   "confidence": "confirmed",
+   "direction": "c2s",
+   "name": "SyntheticArrival",
+   "opcode": 16,
+   "status": "documented"
+  },
+  {
+   "body_layout": "profile(u8) sha1(20)",
+   "channel": "login",
+   "confidence": "confirmed",
+   "direction": "c2s",
+   "name": "SyntheticSignature",
+   "opcode": 98,
+   "status": "documented"
+  }
+ ],
+ "schema": "kaze.opcode-layouts/v1",
+ "universe": {
+  "expected_count": 5,
+  "path": "synthetic"
+ },
+ "unknowns": [
+  {
+   "opcode": 51,
+   "reason": "synthetic uncovered opcode",
+   "status": "unsupported"
+  },
+  {
+   "opcode": 68,
+   "reason": "synthetic uncovered opcode",
+   "status": "unsupported"
+  }
+ ],
+ "version": "synthetic-deg-fixture"
+}

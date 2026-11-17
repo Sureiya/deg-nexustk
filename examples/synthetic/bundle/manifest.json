@@ -1,0 +1,48 @@
+{
+ "blobs": [
+  {
+   "bytes": 146,
+   "kind": "opcode-layout",
+   "sha256": "797245401e527de9ebfe7638c6570d42e81592791ac469d886eac89568855eba",
+   "source_ref": "local:deg-synthetic-fixture"
+  },
+  {
+   "bytes": 155,
+   "kind": "opcode-layout",
+   "sha256": "b4ab563f9d6988d68de61324a9bf15af649bbfd05588d560b123f94c29464557",
+   "source_ref": "local:deg-synthetic-fixture"
+  }
+ ],
+ "bundle_id": "bnd_deg_synthetic_752",
+ "client": {
+  "exe_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "profile": "synthetic-deg-fixture"
+ },
+ "counts": {
+  "blobs": 2,
+  "bytes": 301,
+  "evidence_entries": 7
+ },
+ "evidence": {
+  "path": "evidence.json",
+  "sha256": "4590b7ce1a5949f46c7a9959066eeed8f93e5b6cc0224bea2108a6321846ca74"
+ },
+ "files": [
+  {
+   "bytes": 998,
+   "path": "evidence.json",
+   "sha256": "4590b7ce1a5949f46c7a9959066eeed8f93e5b6cc0224bea2108a6321846ca74"
+  }
+ ],
+ "operator_alias": "deg-synthetic",
+ "schema": "kaze.bundle/v1",
+ "seal": {
+  "algorithm": "sha256",
+  "sha256": "a9e4fc9ccbb3844362417b6de6913143e1b0aea95b1932066bbd39f26f6bd6cf"
+ },
+ "sealed_at": "2026-11-17T00:00:00Z",
+ "target": {
+  "protocol": "7.52",
+  "server": "synthetic"
+ }
+}

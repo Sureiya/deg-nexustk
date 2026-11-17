@@ -1,0 +1,57 @@
+{
+ "bundle_id": "bnd_deg_synthetic_752",
+ "maps": [
+  {
+   "height": 96,
+   "id": 4711,
+   "revision": 1,
+   "width": 128
+  },
+  {
+   "height": 96,
+   "id": 4712,
+   "revision": 1,
+   "width": 96
+  }
+ ],
+ "packets": [
+  {
+   "artifact_sha256": "797245401e527de9ebfe7638c6570d42e81592791ac469d886eac89568855eba",
+   "channel": "game",
+   "direction": "s2c",
+   "length": 8,
+   "opcode": 12,
+   "stage": "wire.recv"
+  },
+  {
+   "artifact_sha256": "b4ab563f9d6988d68de61324a9bf15af649bbfd05588d560b123f94c29464557",
+   "channel": "login",
+   "direction": "c2s",
+   "length": 25,
+   "opcode": 98,
+   "stage": "wire.send"
+  },
+  {
+   "channel": "game",
+   "direction": "c2s",
+   "length": 2,
+   "opcode": 17,
+   "stage": "wire.send"
+  },
+  {
+   "channel": "game",
+   "direction": "s2c",
+   "length": 4,
+   "opcode": 30,
+   "stage": "wire.recv"
+  },
+  {
+   "channel": "login",
+   "direction": "c2s",
+   "length": 7,
+   "opcode": 0,
+   "stage": "wire.send"
+  }
+ ],
+ "schema": "kaze.capture-evidence/v1"
+}

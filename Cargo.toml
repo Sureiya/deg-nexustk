@@ -1,0 +1,22 @@
+[package]
+name = "deg-nexustk"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "NexusTK 7.52 protocol adapter for the DeG proof checker (deg-nexustk)"
+license = "MIT"
+repository = "https://github.com/Sureiya/deg"
+readme = "README.md"
+keywords = ["reverse-engineering", "proof-language", "datalog", "game-security"]
+categories = ["development-tools", "parsing"]
+
+[[bin]]
+name = "deg-nexustk"
+path = "src/main.rs"
+
+[lib]
+name = "deg_nexustk"
+path = "src/lib.rs"
+
+[dependencies]
+deg = { git = "https://github.com/Sureiya/deg", branch = "main" }

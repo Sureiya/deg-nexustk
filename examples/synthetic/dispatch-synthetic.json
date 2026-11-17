@@ -1,0 +1,22 @@
+{
+ "client": {
+  "note": "synthetic deg-nexustk fixture",
+  "path": "client-syn.exe",
+  "sha256": "16623c4d15c8941fbb76a9cd78b8db937d8101f3c6640ed1c87c39db6ecee939"
+ },
+ "generated": "synthetic-deg-fixture",
+ "schema": "kazetk.opcode-dispatcher-audit/v1",
+ "tables": {
+  "mappane_syn": {
+   "case_count": 4,
+   "case_table_bytes": "00 13 40 00 10 13 40 00 20 13 40 00 30 13 40 00",
+   "case_table_file_offset": "0x480",
+   "case_table_va": "0x401280",
+   "dispatcher_va": "0x401200",
+   "index_count": 6,
+   "index_table_bytes": "00 01 02 03 04 05",
+   "index_table_file_offset": "0x490",
+   "index_table_va": "0x401290"
+  }
+ }
+}

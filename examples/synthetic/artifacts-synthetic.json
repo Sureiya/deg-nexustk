@@ -1,0 +1,19 @@
+{
+ "artifacts": [
+  {
+   "classification": "synthetic-artifact-role",
+   "evidence": [],
+   "hex": "0x5a",
+   "opcode": 90,
+   "status": "parser-artifact",
+   "summary": "synthetic deg-nexustk fixture"
+  }
+ ],
+ "dossier": "synthetic",
+ "schema": "kaze.opcode-artifacts/v1",
+ "universe": {
+  "expected_count": 1,
+  "path": "synthetic"
+ },
+ "version": "synthetic-deg-fixture"
+}

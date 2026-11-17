@@ -1,0 +1,32 @@
+{"bodyHex": "00010203", "channel": "login", "dir": "out", "event": "frame", "op": 0, "schema": 1, "seq": 1, "stage": "wire.send", "ts": 1794422049000}
+{"channel": "game", "dir": "in", "event": "frame", "op": 2, "schema": 1, "seq": 2, "stage": "wire.recv"}
+{"channel": "game", "dir": "out", "event": "frame", "op": 12, "schema": 1, "seq": 3, "stage": "wire.send", "ts": 1794422051000}
+{"bodyHex": "0f101112131415", "channel": "unknown", "dir": "in", "event": "frame", "op": 16, "schema": 1, "seq": 4, "stage": "wire.recv", "ts": 1794422052000}
+{"channel": "login", "dir": "out", "event": "frame", "op": 17, "schema": 1, "seq": 5, "stage": "wire.send", "ts": 1794422053000}
+{"channel": "game", "dir": "in", "event": "frame", "op": 21, "schema": 1, "seq": 6, "stage": "wire.recv"}
+{"bodyHex": "1e1f202122", "channel": "game", "dir": "out", "event": "frame", "op": 30, "schema": 1, "seq": 7, "stage": "wire.send", "ts": 1794422055000}
+{"not": "a complete object"
+{"channel": "unknown", "dir": "in", "event": "frame", "op": 48, "schema": 1, "seq": 8, "stage": "wire.recv", "ts": 1794422056000}
+{"channel": "login", "dir": "out", "event": "frame", "op": 98, "schema": 1, "seq": 9, "stage": "wire.send", "ts": 1794422057000}
+{"bodyHex": "2d2e2f3031323334", "channel": "game", "dir": "in", "event": "frame", "op": 126, "schema": 1, "seq": 10, "stage": "wire.recv"}
+{"channel": "game", "dir": "out", "event": "frame", "op": 0, "schema": 1, "seq": 11, "stage": "wire.send", "ts": 1794422059000}
+{"channel": "unknown", "dir": "in", "event": "frame", "op": 2, "schema": 1, "seq": 12, "stage": "wire.recv", "ts": 1794422060000}
+{"bodyHex": "3c3d3e3f4041", "channel": "login", "dir": "out", "event": "frame", "op": 12, "schema": 1, "seq": 13, "stage": "wire.send", "ts": 1794422061000}
+{"channel": "game", "dir": "in", "event": "frame", "op": 16, "schema": 1, "seq": 14, "stage": "wire.recv"}
+{"channel": "game", "dir": "out", "event": "frame", "op": 17, "schema": 1, "seq": 15, "stage": "wire.send", "ts": 1794422063000}
+{"bodyHex": "4b4c4d4e", "channel": "unknown", "dir": "in", "event": "frame", "op": 21, "schema": 1, "seq": 16, "stage": "wire.recv", "ts": 1794422064000}
+{"channel": "login", "dir": "out", "event": "frame", "op": 30, "schema": 1, "seq": 17, "stage": "wire.send", "ts": 1794422065000}
+{"channel": "game", "dir": "in", "event": "frame", "op": 48, "schema": 1, "seq": 18, "stage": "wire.recv"}
+{"bodyHex": "5a5b5c5d5e5f60", "channel": "game", "dir": "out", "event": "frame", "op": 98, "schema": 1, "seq": 19, "stage": "wire.send", "ts": 1794422067000}
+{"channel": "unknown", "dir": "in", "event": "frame", "op": 126, "schema": 1, "seq": 20, "stage": "wire.recv", "ts": 1794422068000}
+this line is not json at all
+{"channel": "login", "dir": "out", "event": "frame", "op": 0, "schema": 1, "seq": 21, "stage": "wire.send", "ts": 1794422069000}
+{"bodyHex": "696a6b6c6d", "channel": "game", "dir": "in", "event": "frame", "op": 2, "schema": 1, "seq": 22, "stage": "wire.recv"}
+{"channel": "game", "dir": "out", "event": "frame", "op": 12, "schema": 1, "seq": 23, "stage": "wire.send", "ts": 1794422071000}
+{"channel": "unknown", "dir": "in", "event": "frame", "op": 16, "schema": 1, "seq": 24, "stage": "wire.recv", "ts": 1794422072000}
+{"bodyHex": "78797a7b7c7d7e7f", "channel": "login", "dir": "out", "event": "frame", "op": 17, "schema": 1, "seq": 25, "stage": "wire.send", "ts": 1794422073000}
+{"channel": "game", "dir": "in", "event": "frame", "op": 21, "schema": 1, "seq": 26, "stage": "wire.recv"}
+{"channel": "game", "dir": "out", "event": "frame", "op": 30, "schema": 1, "seq": 27, "stage": "wire.send", "ts": 1794422075000}
+{"bodyHex": "8788898a8b8c", "channel": "unknown", "dir": "in", "event": "frame", "op": 48, "schema": 1, "seq": 28, "stage": "wire.recv", "ts": 1794422076000}
+{"bodyDeclaredLen": 8, "bodyHex": "aabbccdd\u2026<8>", "bodyHexCaptured": 8, "bodyHexTruncated": true, "channel": "game", "dir": "in", "event": "frame", "op": 12, "schema": 1, "seq": 99, "stage": "wire.recv", "ts": 1794422148000}
+{"channel": "unknown", "dir": "event", "event": "connect", "op": null, "schema": 1, "seq": 100, "stage": "connect", "ts": 1794422149000}

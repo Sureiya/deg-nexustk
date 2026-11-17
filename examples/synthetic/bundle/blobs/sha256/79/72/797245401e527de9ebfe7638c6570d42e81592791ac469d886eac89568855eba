@@ -1,0 +1,1 @@
+{"channel": "game", "direction": "s2c", "fields": "len(u8) name", "kind": "opcode-layout", "note": "synthetic deg-nexustk fixture", "opcode": 12}

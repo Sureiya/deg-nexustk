@@ -1,0 +1,209 @@
+{
+ "ciphers": [
+  {
+   "channel": "login",
+   "ciphertext": "31170c0e0226500707791c0447",
+   "ciphertext_len": 0,
+   "ciphertext_prefix": "",
+   "ciphertext_sha256": "",
+   "direction": "c2s",
+   "identity": "",
+   "increment": 0,
+   "name": "deg-cipher-static-login",
+   "opcode": 98,
+   "plaintext": "6465672d6c6f67696e2d6f6e65",
+   "plaintext_len": 0,
+   "plaintext_prefix": "",
+   "tail": "9ffbe9"
+  },
+  {
+   "channel": "game",
+   "ciphertext": "391f040603395612",
+   "ciphertext_len": 0,
+   "ciphertext_prefix": "",
+   "ciphertext_sha256": "",
+   "direction": "c2s",
+   "identity": "",
+   "increment": 8,
+   "name": "deg-cipher-static-policy",
+   "opcode": 11,
+   "plaintext": "6465672d65786974",
+   "plaintext_len": 0,
+   "plaintext_prefix": "",
+   "tail": "9ffbe9"
+  },
+  {
+   "channel": "game",
+   "ciphertext": "055e551d1506045c03",
+   "ciphertext_len": 0,
+   "ciphertext_prefix": "",
+   "ciphertext_sha256": "",
+   "direction": "s2c",
+   "identity": "deg-vector-a",
+   "increment": 3,
+   "name": "deg-cipher-table",
+   "opcode": 12,
+   "plaintext": "6465672d7461626c65",
+   "plaintext_len": 0,
+   "plaintext_prefix": "",
+   "tail": "cb8aca"
+  },
+  {
+   "channel": "game",
+   "ciphertext": "",
+   "ciphertext_len": 2305,
+   "ciphertext_prefix": "6033212a7c434906",
+   "ciphertext_sha256": "ddcf2788f7f85ea0d6a96cc0475164318c1e0722425099fd901340251675ec5a",
+   "direction": "s2c",
+   "identity": "deg-vector-a",
+   "increment": 1,
+   "name": "deg-cipher-table-long",
+   "opcode": 12,
+   "plaintext": "",
+   "plaintext_len": 2305,
+   "plaintext_prefix": "030a11181f262d34",
+   "tail": "cb8aca"
+  }
+ ],
+ "errors": [
+  {
+   "body_len": 0,
+   "channel": "game",
+   "direction": "s2c",
+   "error": "bad magic",
+   "identity": "",
+   "max_frame_bytes": 0,
+   "name": "deg-error-bad-magic",
+   "opcode": 30,
+   "wire": "bb00051e00"
+  },
+  {
+   "body_len": 0,
+   "channel": "game",
+   "direction": "s2c",
+   "error": "frame too large",
+   "identity": "",
+   "max_frame_bytes": 1024,
+   "name": "deg-error-over-limit",
+   "opcode": 30,
+   "wire": "aafffd1e"
+  },
+  {
+   "body_len": 40000,
+   "channel": "game",
+   "direction": "s2c",
+   "error": "frame too large",
+   "identity": "deg-vector-a",
+   "max_frame_bytes": 0,
+   "name": "deg-error-write-cap",
+   "opcode": 30,
+   "wire": ""
+  }
+ ],
+ "frames": [
+  {
+   "channel": "login",
+   "direction": "c2s",
+   "identity": "",
+   "increment": 0,
+   "name": "deg-frame-static-login",
+   "opcode": 98,
+   "plaintext": "6465672d6c6f67696e2d6f6e65",
+   "plaintext_body": false,
+   "raw": false,
+   "tail": "9ffbe9",
+   "wire": "aa0012620031170c0e0226500707791c04479ffbe9"
+  },
+  {
+   "channel": "game",
+   "direction": "s2c",
+   "identity": "deg-vector-a",
+   "increment": 3,
+   "name": "deg-frame-table",
+   "opcode": 12,
+   "plaintext": "6465672d7461626c65",
+   "plaintext_body": false,
+   "raw": false,
+   "tail": "cb8aca",
+   "wire": "aa000e0c03055e551d1506045c03cb8aca"
+  },
+  {
+   "channel": "login",
+   "direction": "c2s",
+   "identity": "",
+   "increment": 0,
+   "name": "deg-frame-raw-version",
+   "opcode": 0,
+   "plaintext": "6465672d7631",
+   "plaintext_body": true,
+   "raw": true,
+   "tail": "",
+   "wire": "aa0007006465672d7631"
+  },
+  {
+   "channel": "game",
+   "direction": "c2s",
+   "identity": "deg-vector-a",
+   "increment": 0,
+   "name": "deg-frame-arrival",
+   "opcode": 16,
+   "plaintext": "096465672d766563746f722d6100000000",
+   "plaintext_body": true,
+   "raw": true,
+   "tail": "",
+   "wire": "aa00131000096465672d766563746f722d6100000000"
+  }
+ ],
+ "keytables": [
+  {
+   "identity": "deg-vector-a",
+   "length": 1024,
+   "name": "deg-keytable-a",
+   "prefix": "bb6b987fc00775e30fc6e3371113053118df301f5ce90bc60a57dd169d7dfd26"
+  }
+ ],
+ "streams": [
+  {
+   "channel": "login",
+   "consumed": 36,
+   "direction": "s2c",
+   "frames": [
+    {
+     "increment": 0,
+     "opcode": 0,
+     "plaintext": "6465672d7631",
+     "raw": true,
+     "tail": ""
+    },
+    {
+     "increment": 0,
+     "opcode": 126,
+     "plaintext": "6465672d77656c636f6d65",
+     "raw": true,
+     "tail": ""
+    },
+    {
+     "increment": 2,
+     "opcode": 2,
+     "plaintext": "000000",
+     "raw": false,
+     "tail": "cb8aca"
+    }
+   ],
+   "identity": "",
+   "name": "deg-stream-login-mixed",
+   "wire": "aa0007006465672d7631aa000c7e6465672d77656c636f6d65aa00080202577069cb8aca"
+  }
+ ],
+ "stub": false,
+ "tempkeys": [
+  {
+   "b8": 171,
+   "identity": "deg-vector-a",
+   "key": "b813bde3e",
+   "name": "deg-tempkey-a",
+   "w16": 48879
+  }
+ ],
+ "version": "7.52"
+}

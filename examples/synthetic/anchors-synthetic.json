@@ -1,0 +1,8 @@
+[
+ {
+  "bytes": "55 8b ec 6a ff 68 01 30 40 00",
+  "name": "syn_prologue",
+  "section": ".text",
+  "va": "0x401200"
+ }
+]
