@@ -26,3 +26,6 @@ jobs:
 
       - name: Synthetic model check
         run: cargo run -q -- check examples/synthetic/model.dg
+
+      - name: README excerpts
+        run: python3 tools/verify_readme.py

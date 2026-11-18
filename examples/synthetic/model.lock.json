@@ -1,0 +1,93 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    {
+      "kind": "dataset",
+      "name": "ds_frames",
+      "path": "examples/synthetic/frames-synthetic.jsonl",
+      "sha256": "6c4c10ae0de8888510041be663346a404c2998fa6f5876cf481adaf9b3fbcd21",
+      "verified": true
+    },
+    {
+      "kind": "dataset",
+      "name": "ds_index",
+      "path": "examples/synthetic/bundle/index.json",
+      "sha256": "73a3fe87d92de95d285e7281b99917d4b6c043323fe872f9ad4f3f2f1b892a9c",
+      "verified": true
+    },
+    {
+      "kind": "dataset",
+      "name": "ds_manifest",
+      "path": "examples/synthetic/bundle/manifest.json",
+      "sha256": "79c60f293c2993c67f32e39bf96643a6077df694b53af4725df356dfc7336a95",
+      "verified": true
+    },
+    {
+      "kind": "dataset",
+      "name": "ds_vec",
+      "path": "examples/synthetic/vectors-synthetic.json",
+      "sha256": "0b42368b7e491a8024c7ff3dcb9f57c9b9014c2bf3b3fbc8cab34c7e05971cc1",
+      "verified": true
+    },
+    {
+      "kind": "binary",
+      "name": "ntk_syn",
+      "path": "examples/synthetic/client-synthetic.bin",
+      "sha256": "ae36b9aa7b1ad58471c7fd0c88ea94dba5bfa0b92fc4e9c90edeb918b6a1a23c",
+      "verified": true
+    }
+  ],
+  "conflicts": [],
+  "decisions": [],
+  "definitions": [],
+  "deg_version": "0.1.0",
+  "hypotheses": [
+    {
+      "goal": "frame_seen(ev_frames)",
+      "kind": "proof",
+      "name": "P_frames",
+      "note": "strength observational is below the seal threshold deterministic",
+      "status": "hypothesis",
+      "strength": "observational",
+      "support": [
+        "ev_frames"
+      ]
+    }
+  ],
+  "model": "examples/synthetic/model.dg",
+  "obligations": [],
+  "seal_threshold": "deterministic",
+  "sealed": [
+    {
+      "goal": "adapter_sealed(ntk_syn)",
+      "kind": "derived",
+      "name": "C_adapter",
+      "status": "sealed",
+      "strength": "deterministic",
+      "support": [
+        "P_bundle",
+        "P_vectors"
+      ]
+    },
+    {
+      "goal": "bundle_seen(ev_bundle, bnd_deg_synthetic_752)",
+      "kind": "proof",
+      "name": "P_bundle",
+      "status": "sealed",
+      "strength": "deterministic",
+      "support": [
+        "ev_bundle"
+      ]
+    },
+    {
+      "goal": "vector_replay(ev_vec, all)",
+      "kind": "proof",
+      "name": "P_vectors",
+      "status": "sealed",
+      "strength": "deterministic",
+      "support": [
+        "ev_vec"
+      ]
+    }
+  ]
+}
