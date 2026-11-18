@@ -232,9 +232,11 @@ sealed claims: 46; hypotheses: 10; obligations: 54
 
 `deg port --markdown` (a new core flag) re-anchors claims across client
 builds and marks the rest stale. Here a scratch copy of the generated model
-adds a second build declaration over the same operator client, so the
-table-byte proofs port (`reused`) while the vector and artifact claims are
-flagged for revalidation:
+adds a second build declaration over the same operator client — copy
+`model.dg` to a scratch directory and append a second `build ntk2`
+declaration with the client's already-declared sha256 (the exact recipe is in
+[docs/demo.md](docs/demo.md)) — so the table-byte proofs port (`reused`) while
+the vector and artifact claims are flagged for revalidation:
 
 ```text
 # DeG port report — `/tmp/opencode/ntk-port-demo/model.dg` → `ntk2`

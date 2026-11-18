@@ -173,9 +173,23 @@ sealed claims: 46; hypotheses: 10; obligations: 54
 ==============================================================================
 ```
 
-The new core flag `deg port --markdown`: a scratch copy of the generated model
-adds a second build declaration over the same operator client, so the
-table-byte proofs port (`reused`) while the vector and artifact claims are
+The new core flag `deg port --markdown` re-anchors claims across client
+builds and marks the rest stale. Reproduce the port demo from the model
+generated above — a scratch copy plus a second build declaration over the
+same operator client:
+
+```console
+# Reproduce the port demo: a scratch copy of the generated model with a
+# second build declaration pointing at the same operator client.
+$ mkdir -p /tmp/opencode/ntk-port-demo && cp /tmp/opencode/ntk-readme/model.dg /tmp/opencode/ntk-port-demo/model.dg
+# Append this line to /tmp/opencode/ntk-port-demo/model.dg:
+#   build ntk2 = binary("/home/kin/.local/share/kazetk/vanilla-client/NexusTK.exe",
+#     sha256: "<the same sha256 already declared for ntk>", arch: x86, format: pe);
+# (the generated model's provenance header already records that sha256)
+$ cargo run -q -- port /tmp/opencode/ntk-port-demo/model.dg --to ntk2 --markdown
+```
+
+The table-byte proofs port (`reused`) while the vector and artifact claims are
 flagged for revalidation:
 
 ```text
